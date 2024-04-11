@@ -4,6 +4,7 @@
 ## 版本
 * minecraft: 1.20.1
 * forge: 47.2.23
+* Vic's Point Blank: 1.0.2
 * create: 0.5.1f
 * create tweaker: 4.0.9
 * craft tweaker: 14.0.38
