@@ -360,13 +360,6 @@ import mods.create.MixingManager;
 
 
 
-<recipetype:create:mixing>.addRecipe("fluid_mixed", 
-    <constant:create:heat_condition:none>, 
-    [<fluid:minecraft:water> * 200], 
-    [<item:minecraft:glass> * 2], 
-    [<fluid:minecraft:water> * 250], 
-    200);
-
 craftingTable.addShapeless("ammo9mm", 
     <item:pointblank:ammo9mm> * 1, 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:red_dye> * 1]
@@ -415,6 +408,11 @@ craftingTable.addShapeless("ammo338lapua",
 craftingTable.addShapeless("ammo50bmg", 
     <item:pointblank:ammo50bmg> * 1, 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:white_dye> * 1]
+    );
+
+craftingTable.addShapeless("ammo12gauge", 
+    <item:pointblank:ammo12gauge> * 1, 
+    [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:lime_dye> * 1]
     );
 
 // 9mm手枪子弹
@@ -496,3 +494,11 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
     200);
+
+// 12号口径霰弹
+<recipetype:create:mixing>.addRecipe("create_mix_ammo12gauge", 
+    <constant:create:heat_condition:none>, 
+    [<item:pointblank:ammo12gauge> * 6], 
+    [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
+    [],
+    100);

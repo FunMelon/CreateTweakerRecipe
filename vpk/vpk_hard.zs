@@ -357,16 +357,6 @@ import mods.create.MixingManager;
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:iron_sheet>, <item:minecraft:air>]
     ]);
 
-
-
-
-<recipetype:create:mixing>.addRecipe("fluid_mixed", 
-    <constant:create:heat_condition:none>, 
-    [<fluid:minecraft:water> * 200], 
-    [<item:minecraft:glass> * 2], 
-    [<fluid:minecraft:water> * 250], 
-    200);
-
 craftingTable.addShapeless("ammo9mm", 
     <item:pointblank:ammo9mm> * 1, 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:red_dye> * 1]
@@ -417,13 +407,18 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:white_dye> * 1]
     );
 
+craftingTable.addShapeless("ammo12gauge", 
+    <item:pointblank:ammo12gauge> * 1, 
+    [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1, <item:minecraft:paper> * 1, <item:minecraft:lime_dye> * 1]
+    );
+
 // 9mm手枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo9mm", 
     <constant:create:heat_condition:none>, 
     [<item:pointblank:ammo9mm> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // .45acp手枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo45acp", 
@@ -431,7 +426,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo45acp> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 4.6mm手枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo46", 
@@ -439,7 +434,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo46> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 5.45mm手枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo545", 
@@ -447,7 +442,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo545> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 5.56mm步枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo556", 
@@ -455,7 +450,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo556> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 6.8mm步枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo68", 
@@ -463,7 +458,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo68> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 7.62mm步枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo762", 
@@ -471,7 +466,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo762> * 8], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // 7.62x51mm步枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo762x51", 
@@ -479,7 +474,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo762x51> * 6], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // .338lupua狙击枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo338lapua", 
@@ -487,7 +482,7 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo338lapua> * 6], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
 
 // .50bmg狙击枪子弹
 <recipetype:create:mixing>.addRecipe("create_mix_ammo50bmg", 
@@ -495,4 +490,12 @@ craftingTable.addShapeless("ammo50bmg",
     [<item:pointblank:ammo50bmg> * 4], 
     [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
     [],
-    200);
+    100);
+
+// 12号口径霰弹
+<recipetype:create:mixing>.addRecipe("create_mix_ammo12gauge", 
+    <constant:create:heat_condition:none>, 
+    [<item:pointblank:ammo12gauge> * 6], 
+    [<item:minecraft:gunpowder> * 1, <item:create:brass_ingot> * 1],
+    [],
+    100);
